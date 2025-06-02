@@ -47,14 +47,14 @@
       margin-bottom: 60px;
     }
 
-    .banner-image {
+    /*.banner-image {
     display: flex;
     width: 100%;
     height: auto;
     max-height: 400px;
-    /object-fit: cover;
+    object-fit: cover;
     border-bottom: 3px solid #fff;
-    }
+    }*/
 
     h1, h2 {
       color: #ffffff;
