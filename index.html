@@ -4,17 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Clive Nyaga | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
   <header>
     <h1>Clive Nyaga</h1>
-    <p>Software Engineer | Data Science Enthusiast | Tech Explorer</p>
+    <!--<p>Software Engineering & Data Enthusiast</p>-->
+    <p>📞 +254 111 507 600 | 📍 Kenya</p>
     <nav class="navbar">
       <a href="#about">About Me</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact Me</a>
     </nav>
@@ -24,61 +27,100 @@
     <section id="about">
       <h2>About Me</h2>
       <img class="profile-img" src="./images/pexels-pixabay-207580.jpg" alt="Clive Nyaga">
-      <p>Hello! My name is Clive Nyaga. I was born on May 7, 2003. My passion for technology, puzzles, and analysis drives my learning journey in both software engineering and data science. When I'm not coding, you’ll find me deep into football (playing or watching), immersed in country music, or enjoying documentaries about animals, psychology, health, fitness, finance, and history. I am also fluent in English, Spanish and Kiswahili.</p>
+      <p>Aspiring IT professional with hands-on experience supporting technology operations at the Kenya Civil Aviation Authority. Skilled in troubleshooting, system maintenance, and network support, with a growing focus on Python programming, data analysis, and visualization. Currently pursuing a Bachelor's Degree in Information Technology at Kenyatta University, with strong foundations in software development. A multilingual communicator fluent in English, Spanish, and Swahili.</p>
     </section>
 
     <section id="education">
       <h2>Education</h2>
-      <p>I am currently sharpening my software engineering skills at Moringa School, a place that fosters creativity and real-world problem-solving. I am also pursuing a Bachelor of Information Technology degree at Kenyatta University, where I’ve built a strong foundation in networks, systems, and information management.</p>
+      <div class="education-item">
+        <h3>Kenyatta University</h3>
+        <p><strong>Bachelor of Information Technology</strong><br>
+        <em>Sep 2021 – Apr 2026</em><br>
+        Focus: Software Development, Data Analysis</p>
+      </div>
+      <div class="education-item">
+        <h3>Alliance High School</h3>
+        <p><em>Jan 2017 – Apr 2021</em></p>
+      </div>
     </section>
 
     <section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-container">
-    <div class="skill-item">
-      <img src="./images/pexels-jakubzerdzicki-32299899.jpg" alt="Python Programming">
-      <p>I am highly proficient in Python and have hands-on experience with libraries like <strong>pandas</strong> for data manipulation, <strong>matplotlib</strong> and <strong>seaborn</strong> for data visualization, and general-purpose scripting.</p>
-    </div>
-    <div class="skill-item">
-      <img src="./images/microsoft.jpg" alt="Excel and Microsoft Tools">
-      <p>I possess a strong command of Microsoft Office tools including Excel, Word, and PowerPoint, and hold an <strong>ICDL certification</strong> verifying my practical proficiency in digital productivity software.</p>
-    </div>
-    <!--<div class="skill-item">
-      <img src="./images/problem-solving.jpg" alt="Problem Solving">
-      <p>Analytical thinking and problem-solving</p>
-    </div>-->
-    <div class="skill-item">
-     <!-- <img src="./images/learning.jpg" alt="Fast Learner">
-      <p>Fast learner with strong work ethic</p>
-    </div>-->
-    <div class="skill-item">
-      <img src="./images/flags.jpg" alt="Multilingual">
-      <p>Effective communication is one of my key assets. I’m fluent in <strong>English, Spanish, and Kiswahili</strong>, allowing me to collaborate in diverse environments and connect with a wide range of people.</p>
-    </div>
-  </div>
-</section>
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <img src="./images/pexels-jakubzerdzicki-32299899.jpg" alt="Programming & Data">
+          <h3>Programming & Data</h3>
+          <p>Python, pandas, NumPy, Matplotlib, Seaborn</p>
+        </div>
+        <div class="skill-item">
+          <img src="./images/pexels-brett-sayles-4597280.jpg" alt="Databases">
+          <h3>Databases</h3>
+          <p>SQL, MySQL</p>
+        </div>
+        <div class="skill-item">
+          <img src="./images/pexels-cookiecutter-1148820.jpg" alt="IT Support">
+          <h3>Networking & IT Support</h3>
+          <p>Troubleshooting, System Maintenance</p>
+        </div>
+        <div class="skill-item">
+          <img src="./images/microsoft.jpg" alt="Productivity Tools">
+          <h3>Productivity Tools</h3>
+          <p>Microsoft Office Suite (Word, Excel, PowerPoint), ICDL Proficiency</p>
+        </div>
+        <div class="skill-item">
+          <img src="./images/pexels-pixabay-270404.jpg" alt="Operating Systems">
+          <h3>Operating Systems</h3>
+          <p>Windows, Linux (basic)</p>
+        </div>
+        <div class="skill-item">
+          <img src="./images/flags.jpg" alt="Languages">
+          <h3>Languages</h3>
+          <p>English (Full Professional), Spanish (Intermediate), Swahili (Native/Bilingual)</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Reservelt – <a href="https://reservelt.onrender.com/" target="_blank">Live Demo</a></h3>
+        <p><em>A modern hotel room reservation system</em></p>
+        <ul>
+          <li>Developed a full-featured booking management system using React (19.1.0) and Vite (7.0.4), enabling real-time availability checking and conflict prevention.</li>
+          <li>Implemented room management features with filtering by type, price, occupancy, and amenities.</li>
+          <li>Built an interactive customer feedback module with ratings and reviews to boost user engagement.</li>
+          <li>Integrated a service catalog & social media contact system for improved customer communication.</li>
+          <li>Designed a responsive, mobile-first UI with image galleries, advanced filtering, and smooth navigation.</li>
+          <li>Connected the frontend to a JSON Server REST API backend with date validation using date-fns (4.1.0).</li>
+          <li>Deployed on Render (API) and Vite (Frontend) for scalability and performance.</li>
+        </ul>
+        <p><strong>Tech Stack:</strong> React, React Router DOM, Vite, CSS Modules, Custom CSS, JSON Server, date-fns, Render</p>
+      </div>
+    </section>
 
     <section id="experience">
-      <h2>Work Experience</h2>
-      <p><strong>IT Support Technician</strong><br>
-      <em>Kenya Civil Aviation Authority (KCAA)</em><br>
-      May 2024 – September 2024</p>
-      <ul>
-        <li>Assisted in configuring and maintaining IT infrastructure for various departments.</li>
-        <li>Provided technical support for software and hardware troubleshooting.</li>
-        <li>Documented user issues and followed up on resolutions efficiently.</li>
-        <li>Collaborated with senior IT officers on system upgrades and maintenance tasks.</li>
-      </ul>
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Information Technology Staff</h3>
+        <p><strong>Kenya Civil Aviation Authority</strong> – Nairobi County, Kenya<br>
+        <em>May 2024 – Sept 2024</em></p>
+        <ul>
+          <li>Delivered IT support, diagnosing and resolving hardware, software, and network issues, reducing downtime.</li>
+          <li>Assisted in system upgrades and maintenance, ensuring compliance with aviation industry standards.</li>
+          <li>Supported data backup and recovery processes, safeguarding critical organizational information.</li>
+          <li>Provided user support and training, improving digital adoption and productivity across departments.</li>
+          <li>Collaborated with IT colleagues to streamline workflows and implement process improvements.</li>
+        </ul>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>I’m always excited to connect with fellow developers, data enthusiasts, and creative thinkers. Whether you have a collaboration idea, want to exchange ideas, or simply say hello, feel free to reach out!</p>
-      <ul>
-        <li>Email: <a href="mailto:nyagaclive@gmail.com">nyagaclive@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/Clive-Nyaga" target="_blank">github.com/Clive-Nyaga</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/clive-nyaga-545940266/" target="_blank">linkedin.com</a></li>
+      <p>I'm always excited to connect with fellow developers, data enthusiasts, and creative thinkers. Whether you have a collaboration idea, want to exchange ideas, or simply say hello, feel free to reach out!</p>
+      <ul class="contact-list">
+        <li><i class="fas fa-envelope"></i> <a href="mailto:nyagaclive@gmail.com">nyagaclive@gmail.com</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/Clive-Nyaga" target="_blank">github.com/Clive-Nyaga</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/clive-nyaga-545940266/" target="_blank">linkedin.com</a></li>
       </ul>
     </section>
   </div>
@@ -86,5 +128,6 @@
   <footer>
     <p>&copy; 2025 Clive Nyaga. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

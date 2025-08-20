@@ -10,6 +10,11 @@ body {
       background-color: #08172d;
       padding: 20px;
       text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
     .navbar a {
@@ -17,6 +22,10 @@ body {
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    body {
+      padding-top: 140px;
     }
 
     .container {
@@ -83,10 +92,98 @@ body {
   color: #333;
 }
 
+.skill-item h3 {
+  color: #1c3d6d;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.education-item, .experience-item, .project-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(28, 61, 109, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #1c3d6d;
+}
+
+.education-item h3, .experience-item h3, .project-item h3 {
+  color: #1c3d6d;
+  margin-bottom: 10px;
+}
+
+.project-item ul {
+  margin: 15px 0;
+}
+
+.project-item li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.experience-item ul {
+  margin: 15px 0;
+}
+
+.experience-item li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
 
     footer {
       text-align: center;
       padding: 20px;
       background-color: #08172d;
       color: #aaa;
+    }
+
+    .navbar a {
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #4a90e2;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-list i {
+      margin-right: 12px;
+      width: 20px;
+      color: #1c3d6d;
+      font-size: 1.2rem;
+    }
+
+    .contact-list a {
+      color: #f4f4f4;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-list a:hover {
+      color: #4a90e2;
+    }
+
+    @media (max-width: 768px) {
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 20px;
+      }
+      
+      header p {
+        font-size: 0.9rem;
+      }
     }
