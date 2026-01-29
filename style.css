@@ -101,7 +101,7 @@ body {
 .education-item, .experience-item, .project-item {
   margin-bottom: 30px;
   padding: 20px;
-  background-color: rgba(28, 61, 109, 0.1);
+  background-color: #f9f9f9;
   border-radius: 8px;
   border-left: 4px solid #1c3d6d;
 }
@@ -111,6 +111,10 @@ body {
   margin-bottom: 10px;
 }
 
+.education-item p, .project-item p, .experience-item p {
+  color: #333;
+}
+
 .project-item ul {
   margin: 15px 0;
 }
@@ -118,6 +122,7 @@ body {
 .project-item li {
   margin-bottom: 8px;
   line-height: 1.4;
+  color: #333;
 }
 
 .experience-item ul {
@@ -127,6 +132,7 @@ body {
 .experience-item li {
   margin-bottom: 8px;
   line-height: 1.4;
+  color: #333;
 }
 
 
