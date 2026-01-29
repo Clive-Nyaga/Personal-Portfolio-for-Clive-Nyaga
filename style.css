@@ -106,6 +106,23 @@ body {
   border-left: 4px solid #1c3d6d;
 }
 
+.education-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.school-badge {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
 .education-item h3, .experience-item h3, .project-item h3 {
   color: #1c3d6d;
   margin-bottom: 10px;
