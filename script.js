@@ -12,6 +12,38 @@ document.querySelectorAll('.navbar a').forEach(link => {
   });
 });
 
+// Toggle Skills visibility
+function toggleSkills() {
+  const hiddenSkills = document.querySelectorAll('.hidden-skill');
+  const button = document.querySelector('#skills .view-more-btn');
+  
+  hiddenSkills.forEach(skill => {
+    if (skill.style.display === 'none' || skill.style.display === '') {
+      skill.style.display = 'block';
+    } else {
+      skill.style.display = 'none';
+    }
+  });
+  
+  button.textContent = button.textContent === 'View More' ? 'View Less' : 'View More';
+}
+
+// Toggle Tech Stack visibility
+function toggleTechStack() {
+  const hiddenTech = document.querySelectorAll('.hidden-tech');
+  const button = document.querySelector('#tech-stack .view-more-btn');
+  
+  hiddenTech.forEach(tech => {
+    if (tech.style.display === 'none' || tech.style.display === '') {
+      tech.style.display = 'block';
+    } else {
+      tech.style.display = 'none';
+    }
+  });
+  
+  button.textContent = button.textContent === 'View More' ? 'View Less' : 'View More';
+}
+
 // Animate elements on scroll
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -27,22 +59,4 @@ document.querySelectorAll('section').forEach(section => {
   section.style.transform = 'translateY(20px)';
   section.style.transition = 'opacity 0.6s, transform 0.6s';
   observer.observe(section);
-});
-
-// Typing effect for header
-const text = "Software Engineering & Data Enthusiast";
-const element = document.querySelector('header p');
-let i = 0;
-
-function typeWriter() {
-  if (i < text.length) {
-    element.textContent = text.substring(0, i + 1);
-    i++;
-    setTimeout(typeWriter, 100);
-  }
-}
-
-window.addEventListener('load', () => {
-  element.textContent = '';
-  typeWriter();
 });

@@ -16,6 +16,7 @@
     <nav class="navbar">
       <a href="#about">About Me</a>
       <a href="#skills">Skills</a>
+      <a href="#tech-stack">Tech Stack</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
@@ -48,42 +49,98 @@
           <h3>API Integration</h3>
           <p>Third-party REST APIs (TMDB API), JSON-based data exchange</p>
         </div>
-        <div class="skill-item">
+        <div class="skill-item hidden-skill">
           <img src="./images/pexels-tima-miroshnichenko-9574565.jpg" alt="Version Control">
           <h3>Version Control & Collaboration</h3>
           <p>Git, GitHub, Jira (task assignment, tracking, scheduling)</p>
         </div>
-        <div class="skill-item">
-          <img src="./images/pexels-pixabay-326012.jpg" alt="Programming & Data">
+        <div class="skill-item hidden-skill">
+          <img src="https://s44885.pcdn.co/wp-content/uploads/2019/09/Fotolia_257957753_Subscription_Monthly_M.jpg" alt="Programming & Data">
           <h3>Programming & Data</h3>
           <p>Python, pandas, NumPy, Matplotlib, Seaborn</p>
         </div>
-        <div class="skill-item">
+        <div class="skill-item hidden-skill">
           <img src="./images/pexels-jakubzerdzicki-32299899.jpg" alt="AI Tools">
           <h3>Artificial Intelligence Tools</h3>
           <p>AI-assisted debugging, documentation generation, code optimization</p>
         </div>
-        <div class="skill-item">
+        <div class="skill-item hidden-skill">
           <img src="./images/microsoft.jpg" alt="Productivity Tools">
           <h3>Productivity & Design Tools</h3>
           <p>Microsoft Office Suite, Canva, ICDL Proficiency</p>
         </div>
-        <div class="skill-item">
+        <div class="skill-item hidden-skill">
           <img src="./images/pexels-pixabay-207580.jpg" alt="Operating Systems">
           <h3>Operating Systems</h3>
           <p>Windows, Linux (basic)</p>
         </div>
-        <div class="skill-item">
+        <div class="skill-item hidden-skill">
           <img src="./images/flags.jpg" alt="Languages">
           <h3>Languages</h3>
           <p>English, Spanish, Swahili</p>
         </div>
-        <div class="skill-item">
+        <div class="skill-item hidden-skill">
           <img src="./images/pexels-pixabay-270404.jpg" alt="Soft Skills">
           <h3>Soft Skills</h3>
           <p>Problem-Solving, Critical Thinking, Communication, Teamwork, Adaptability, Time Management, Attention to Detail</p>
         </div>
       </div>
+      <button class="view-more-btn" onclick="toggleSkills()">View More</button>
+    </section>
+
+    <section id="tech-stack">
+      <h2>Tech Stack</h2>
+      <div class="tech-stack-container">
+        <div class="tech-category">
+          <h3>Frontend</h3>
+          <div class="tech-items">
+            <span class="tech-item">HTML5</span>
+            <span class="tech-item">CSS3</span>
+            <span class="tech-item">JavaScript</span>
+            <span class="tech-item">React</span>
+            <span class="tech-item">Bootstrap</span>
+            <span class="tech-item">Vite</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3>Backend</h3>
+          <div class="tech-items">
+            <span class="tech-item">Python</span>
+            <span class="tech-item">Flask</span>
+            <span class="tech-item">REST APIs</span>
+            <span class="tech-item">JSON Server</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h3>Database</h3>
+          <div class="tech-items">
+            <span class="tech-item">SQL</span>
+            <span class="tech-item">MySQL</span>
+          </div>
+        </div>
+        <div class="tech-category hidden-tech">
+          <h3>Tools & Libraries</h3>
+          <div class="tech-items">
+            <span class="tech-item">Git</span>
+            <span class="tech-item">GitHub</span>
+            <span class="tech-item">Jira</span>
+            <span class="tech-item">pandas</span>
+            <span class="tech-item">NumPy</span>
+            <span class="tech-item">Matplotlib</span>
+            <span class="tech-item">Seaborn</span>
+            <span class="tech-item">React Router</span>
+            <span class="tech-item">Context API</span>
+            <span class="tech-item">Formik</span>
+          </div>
+        </div>
+        <div class="tech-category hidden-tech">
+          <h3>Deployment</h3>
+          <div class="tech-items">
+            <span class="tech-item">Render</span>
+          </div>
+        </div>
+      </div>
+      <button class="view-more-btn" onclick="toggleTechStack()">View More</button>
     </section>
 
     <section id="projects">
@@ -157,7 +214,7 @@
         <div class="education-header">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR17Cipd7FtHlxPFhCSRy_HdGXKS5FnAiMx-f6Mlpdr&s" alt="Kenyatta University" class="school-badge">
           <div>
-            <h3>Kenyatta University</h3>
+            <h3><a href="https://www.ku.ac.ke/" target="_blank">Kenyatta University</a></h3>
             <p><strong>Bachelor of Science, Information Technology</strong><br>
             <em>Sep 2021 – Apr 2026</em><br>
             Focus: Software Development, Data Analysis</p>
@@ -168,7 +225,7 @@
         <div class="education-header">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkxXhB8fcCv-yyV4SH9vSX84MGSjIhtphxwxIQEuG0yw&s" alt="Moringa School" class="school-badge">
           <div>
-            <h3>Moringa School</h3>
+            <h3><a href="https://moringaschool.com/" target="_blank">Moringa School</a></h3>
             <p><strong>Certificate in Software Engineering</strong><br>
             <em>May 2025 – Sep 2025</em><br>
             Focus: Full-Stack Software Engineering</p>
@@ -179,7 +236,7 @@
         <div class="education-header">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrsc_k8XIjKat1fBsGw8jVZ0rPC8Dov8qwpcnYldzOrg&s" alt="Alliance High School" class="school-badge">
           <div>
-            <h3>Alliance High School</h3>
+            <h3><a href="https://www.alliancehighschool.ac.ke/" target="_blank">Alliance High School</a></h3>
             <p><em>Jan 2017 – Apr 2021</em></p>
           </div>
         </div>
