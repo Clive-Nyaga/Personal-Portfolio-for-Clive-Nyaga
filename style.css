@@ -38,6 +38,10 @@ body {
       margin-bottom: 50px;
     }
 
+    #about {
+      padding-top: 60px;
+    }
+
     h2 {
       border-bottom: 2px solid #1c3d6d;
       padding-bottom: 5px;
